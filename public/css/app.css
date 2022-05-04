@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+div.container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+
+header div.header-top {
+  color: white;
+  background-color: #2d82f9;
+}
+
+header div.header-top div.container {
+  justify-content: end;
+}
+
+header div.header-top span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-left: 3rem;
+  padding: 0.2rem;
+}
+
+header div.header-bottom div.container {
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div.header-bottom div.container img {
+  height: 100%;
+  padding: 1rem;
+}
+
+header div.header-bottom div.container nav ul li {
+  list-style: none;
+  display: inline;
+}
+
+header div.header-bottom div.container nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2.6rem 0.5rem;
+}
+
+header div.header-bottom div.container nav ul li a .active {
+  color: #2d82f9;
+  border-bottom: 3px solid #2d82f9;
+}
+
+header div.header-bottom div.container nav ul li a:hover {
+  border-bottom: 3px solid #2d82f9;
+}
+
+header div.header-bottom div.container div.search {
+  height: 25%;
+  border-bottom: 2px solid #2d82f9;
+}
+
+header div.header-bottom div.container div.search input {
+  border: transparent;
+  text-align: end;
+  margin-right: 0.5rem;
+}
+
+section#jumbotron {
+  height: 60vh;
+  background: url("/images/jumbotron.jpg");
+  background-size: cover;
+}
+
