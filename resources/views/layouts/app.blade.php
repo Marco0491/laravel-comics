@@ -10,8 +10,15 @@
     </head>
     <body>
         @include('components.header')
-        <section id="jumbotron"></section>
-        <main></main>
+
+        <section id="jumbotron">
+            <span>current series</span>
+        </section>
+
+        <main>
+            @yield('main-content')
+        </main>
+
         @include('components.footer')
     </body>
 </html>

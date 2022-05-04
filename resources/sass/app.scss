@@ -25,6 +25,7 @@ header div.header-top {
         text-transform: uppercase;
         margin-left: 3rem;
         padding: 0.2rem;
+        cursor: pointer;
     }
 }
 
@@ -70,7 +71,64 @@ div.container {
 }
 
 section#jumbotron {
-    height: 60vh;
+    height: 50vh;
     background: url("/images/jumbotron.jpg");
     background-size: cover;
+    position: relative;
+    span {
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #2d82f9;
+        padding: 1rem;
+        position: absolute;
+        top: 93%;
+        left: 15%;
+    }
+}
+
+main {
+    height: 60vh;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+footer {
+    background: url("/images/footer-bg.jpg");
+    div.container {
+        height: 40vh;
+        position: relative;
+        h5 {
+        color: white;
+        text-transform: uppercase;
+        margin: 0.6rem 0;
+        }
+        li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: gray;
+            font-size: 0.6rem;
+            &:hover {
+            color: white;
+            }
+        }
+        }
+        div.left-col,
+        div.central-col,
+        div.right-col {
+        text-align: start;
+        padding: 1rem 0;
+        margin-right: 1rem;
+        }
+        div#dc-logo {
+            width: 45%;
+            height: 100%;
+            background: url("/images/dc-logo-bg.png");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            right: 0;
+        }
+    }
 }

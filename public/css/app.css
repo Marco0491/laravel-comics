@@ -28,6 +28,7 @@ header div.header-top span {
   text-transform: uppercase;
   margin-left: 3rem;
   padding: 0.2rem;
+  cursor: pointer;
 }
 
 header div.header-bottom div.container {
@@ -76,8 +77,73 @@ header div.header-bottom div.container div.search input {
 }
 
 section#jumbotron {
-  height: 60vh;
+  height: 50vh;
   background: url("/images/jumbotron.jpg");
   background-size: cover;
+  position: relative;
+}
+
+section#jumbotron span {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #2d82f9;
+  padding: 1rem;
+  position: absolute;
+  top: 93%;
+  left: 15%;
+}
+
+main {
+  height: 60vh;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+footer {
+  background: url("/images/footer-bg.jpg");
+}
+
+footer div.container {
+  height: 40vh;
+  position: relative;
+}
+
+footer div.container h5 {
+  color: white;
+  text-transform: uppercase;
+  margin: 0.6rem 0;
+}
+
+footer div.container li {
+  list-style: none;
+}
+
+footer div.container li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 0.6rem;
+}
+
+footer div.container li a:hover {
+  color: white;
+}
+
+footer div.container div.left-col,
+footer div.container div.central-col,
+footer div.container div.right-col {
+  text-align: start;
+  padding: 1rem 0;
+  margin-right: 1rem;
+}
+
+footer div.container div#dc-logo {
+  width: 45%;
+  height: 100%;
+  background: url("/images/dc-logo-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 0;
 }
 
