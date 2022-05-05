@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="https://kit.fontawesome.com/f9418bd38a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{asset("css/app.css")}}">
-        <title>Laravel DC-Comics</title>
+        <title>Laravel DC-Comics - @yield('title')</title>
     </head>
     <body>
         @include('components.header')
