@@ -151,4 +151,17 @@
         </div>
         <div id="dc-logo"></div>
     </div>
+    <div class="social-section">
+        <div class="container">
+            <button>sign up now!</button>
+            <div class="social-logo">
+                <h4>follow us</h4>
+                <img src="{{asset('images/footer-facebook.png')}}" alt="facebook logo">
+                <img src="{{asset('images/footer-twitter.png')}}" alt="twitter logo">
+                <img src="{{asset('images/footer-youtube.png')}}" alt="youtube logo">
+                <img src="{{asset('images/footer-pinterest.png')}}" alt="pinterest logo">
+                <img src="{{asset('images/footer-periscope.png')}}" alt="periscope logo">
+            </div>
+        </div>
+    </div>
 </footer>

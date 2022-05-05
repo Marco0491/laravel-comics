@@ -87,7 +87,7 @@ section#jumbotron {
     }
 }
 
-main {
+div.main {
     background-color: #1c1c1c;
     color: white;
     padding: 2.5rem;
@@ -107,8 +107,105 @@ main {
             object-position: top;
             margin-bottom: 1rem;
         }
-        h6 {
-            text-transform: uppercase;
+        a {
+            text-decoration: none;
+            h6 {
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+    }
+}
+
+div.main.bg-white {
+    background-color: white;
+    color: black;
+    padding: 4rem;
+    div.container {
+        div.left-col {
+            width: 70%;
+            img {
+                width: 200px;
+                border: 2px solid white;
+                position: absolute;
+                top: 30%;
+                left: 15%;
+            }
+            h2 {
+                text-transform: uppercase;
+            }
+            div.top-price-info {
+                color: white;
+                background-color: #55ba59;
+                border-bottom: 1px solid black;
+                display: flex;
+                margin: 1rem 0;
+                div.top-left-price-info {
+                    width: 75%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem;
+                }
+                div.top-right-price-info {
+                    border-left: 1px solid black;
+                    padding: 1rem 0.6rem;
+                }
+            }
+            p#description {
+                line-height: 1.75rem;
+            }
+        }
+        div.right-col {
+            width: 30%;
+            text-align: end;
+            padding: 1rem;
+            img {
+                width: 100%;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+div.main-bottom {
+    background-color: #f6f6f6;
+    padding: 2rem;
+    div.container {
+        div.left-column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            h2 {
+                margin-bottom: 2rem;
+            }
+            div.artists, div.writers {
+                border-top: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+                display: flex;
+                justify-content: space-between;
+                padding: 0.5rem;
+                div.artist-list,div.writer-list {
+                    width: 60%;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        div.right-column {
+            width: 50%;
+            padding: 1rem;
+            h2 {
+                margin-bottom: 2rem;
+            }
+            div.series,div.price,div.date {
+                border-top: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+                padding: 0.5rem;
+                h5 {
+                    width: 35%;
+                    display: inline-block;
+                }
+            }
         }
     }
 }
@@ -149,6 +246,35 @@ footer {
             background-position: center;
             position: absolute;
             right: 0;
+        }
+    }
+    div.social-section {
+        background-color: #303030;
+        div.container {
+            height: 15vh;
+            justify-content: space-between;
+            align-items: center;
+            button {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            border: 1px solid #2d82f9;
+            background-color: transparent;
+            padding: 0.8rem;
+            margin-left: 1rem;
+            }
+            div.social-logo {
+                display: flex;
+                h4 {
+                color: #2d82f9;
+                text-transform: uppercase;
+                align-self: center;
+                margin-right: 1rem;
+                }
+                img {
+                    margin: 0 0.5rem;
+                }
+            }
         }
     }
 }

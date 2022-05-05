@@ -17,3 +17,12 @@ Route::get('/comics', function () {
     $comics = config('comics');
     return view('guest.comics', ["comicsList" => $comics]);
 });
+
+Route::get('/comics/{index}', function ($index) {
+    $comics = config('comics');
+    if( is_numeric($index) && $index >= 0 && $index < count($comics)){
+        return view('guest.comicDetail', ["comicDetail" => $comics[$index]]);
+    } else {
+        abort(404);
+    };
+})->name('comic-detail');

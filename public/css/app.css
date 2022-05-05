@@ -94,25 +94,25 @@ section#jumbotron span {
   left: 15%;
 }
 
-main {
+div.main {
   background-color: #1c1c1c;
   color: white;
   padding: 2.5rem;
 }
 
-main div.container {
+div.main div.container {
   display: flex;
   flex-wrap: wrap;
 }
 
-main div.cards {
+div.main div.cards {
   width: 16.6666666667%;
   height: 250px;
   text-align: center;
   padding: 0.5rem;
 }
 
-main div.cards img {
+div.main div.cards img {
   width: 100%;
   height: 80%;
   -o-object-fit: cover;
@@ -122,8 +122,127 @@ main div.cards img {
   margin-bottom: 1rem;
 }
 
-main div.cards h6 {
+div.main div.cards a {
+  text-decoration: none;
+}
+
+div.main div.cards a h6 {
   text-transform: uppercase;
+  color: white;
+}
+
+div.main.bg-white {
+  background-color: white;
+  color: black;
+  padding: 4rem;
+}
+
+div.main.bg-white div.container div.left-col {
+  width: 70%;
+}
+
+div.main.bg-white div.container div.left-col img {
+  width: 200px;
+  border: 2px solid white;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+div.main.bg-white div.container div.left-col h2 {
+  text-transform: uppercase;
+}
+
+div.main.bg-white div.container div.left-col div.top-price-info {
+  color: white;
+  background-color: #55ba59;
+  border-bottom: 1px solid black;
+  display: flex;
+  margin: 1rem 0;
+}
+
+div.main.bg-white div.container div.left-col div.top-price-info div.top-left-price-info {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+div.main.bg-white div.container div.left-col div.top-price-info div.top-right-price-info {
+  border-left: 1px solid black;
+  padding: 1rem 0.6rem;
+}
+
+div.main.bg-white div.container div.left-col p#description {
+  line-height: 1.75rem;
+}
+
+div.main.bg-white div.container div.right-col {
+  width: 30%;
+  text-align: end;
+  padding: 1rem;
+}
+
+div.main.bg-white div.container div.right-col img {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+div.main-bottom {
+  background-color: #f6f6f6;
+  padding: 2rem;
+}
+
+div.main-bottom div.container div.left-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+div.main-bottom div.container div.left-column h2 {
+  margin-bottom: 2rem;
+}
+
+div.main-bottom div.container div.left-column div.artists,
+div.main-bottom div.container div.left-column div.writers {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+div.main-bottom div.container div.left-column div.artists div.artist-list,
+div.main-bottom div.container div.left-column div.artists div.writer-list,
+div.main-bottom div.container div.left-column div.writers div.artist-list,
+div.main-bottom div.container div.left-column div.writers div.writer-list {
+  width: 60%;
+  font-size: 0.8rem;
+}
+
+div.main-bottom div.container div.right-column {
+  width: 50%;
+  padding: 1rem;
+}
+
+div.main-bottom div.container div.right-column h2 {
+  margin-bottom: 2rem;
+}
+
+div.main-bottom div.container div.right-column div.series,
+div.main-bottom div.container div.right-column div.price,
+div.main-bottom div.container div.right-column div.date {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 0.5rem;
+}
+
+div.main-bottom div.container div.right-column div.series h5,
+div.main-bottom div.container div.right-column div.price h5,
+div.main-bottom div.container div.right-column div.date h5 {
+  width: 35%;
+  display: inline-block;
 }
 
 footer {
@@ -171,5 +290,40 @@ footer div.container div#dc-logo {
   background-position: center;
   position: absolute;
   right: 0;
+}
+
+footer div.social-section {
+  background-color: #303030;
+}
+
+footer div.social-section div.container {
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div.social-section div.container button {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid #2d82f9;
+  background-color: transparent;
+  padding: 0.8rem;
+  margin-left: 1rem;
+}
+
+footer div.social-section div.container div.social-logo {
+  display: flex;
+}
+
+footer div.social-section div.container div.social-logo h4 {
+  color: #2d82f9;
+  text-transform: uppercase;
+  align-self: center;
+  margin-right: 1rem;
+}
+
+footer div.social-section div.container div.social-logo img {
+  margin: 0 0.5rem;
 }
 
